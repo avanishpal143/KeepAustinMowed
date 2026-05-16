@@ -7,12 +7,13 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-6 h-6 rounded bg-primary flex items-center justify-center text-white font-bold text-xs">
-                K
-              </div>
-              <span className="text-lg font-bold text-white tracking-tight">KeepAustinMowed</span>
-            </div>
+            <a href="#top" className="inline-block mb-6">
+              <img 
+                src="/images/logo.avif" 
+                alt="Keep Austin Mowed" 
+                className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+              />
+            </a>
             <p className="mb-4">Premium lawn care services across the greater Austin area.</p>
           </div>
 

@@ -33,12 +33,13 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <div className="flex items-center gap-2 cursor-pointer">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold shadow-[0_0_15px_rgba(223,0,255,0.5)]">
-            K
-          </div>
-          <span className="text-xl font-bold tracking-tight text-white">KeepAustinMowed</span>
-        </div>
+        <a href="#top" className="flex items-center cursor-pointer group">
+          <img 
+            src="/images/logo.avif" 
+            alt="Keep Austin Mowed" 
+            className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          />
+        </a>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
