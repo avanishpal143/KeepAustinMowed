@@ -1,6 +1,7 @@
 import React from "react"
 import { cn } from "../../lib/utils"
 import { HTMLMotionProps, motion } from "framer-motion"
+import { navigateTo } from "../../lib/seo"
 
 type BaseProps = {
   variant?: "primary" | "secondary" | "outline" | "ghost"
@@ -33,10 +34,34 @@ export const Button = React.forwardRef<HTMLElement, ButtonProps>(
       <span className="inline-block skew-x-[10deg]">{children}</span>
     )
 
+    const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      // Call parent click handler if defined
+      if (props.onClick) {
+        (props.onClick as React.MouseEventHandler<HTMLAnchorElement>)(e)
+      }
+
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) {
+        return
+      }
+
+      if (
+        href &&
+        !href.startsWith('http') &&
+        !href.startsWith('mailto:') &&
+        !href.startsWith('tel:') &&
+        !href.startsWith('sms:') &&
+        !href.startsWith('#')
+      ) {
+        e.preventDefault()
+        navigateTo(href)
+      }
+    }
+
     if (href) {
       return (
         <motion.a
           href={href}
+          onClick={handleAnchorClick}
           whileHover={{ scale: 1.05, y: -2 }}
           whileTap={{ scale: 0.95 }}
           ref={ref as React.Ref<HTMLAnchorElement>}

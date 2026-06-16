@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "../ui/Button"
+import { Link } from "../ui/Link"
+import { CONFIG } from "../../config"
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -16,12 +18,12 @@ export const Navbar = () => {
   }, [])
 
   const navLinks = [
-    { name: "Home", href: "#top" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Locations", href: "#locations" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About / My Story", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Locations", href: "/locations" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
   ]
 
   return (
@@ -29,33 +31,31 @@ export const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/80 backdrop-blur-lg border-b border-white/10 py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-black/90 backdrop-blur-lg border-b border-white/10 py-3" : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#top" className="flex items-center cursor-pointer group">
-          <img 
-            src="/images/logo.avif" 
-            alt="Keep Austin Mowed" 
-            className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-          />
-        </a>
+        <Link href="/" className="flex items-center cursor-pointer group">
+          <span className="text-xl md:text-2xl font-black tracking-tighter text-white uppercase select-none">
+            KEEP <span className="text-primary font-black">AUSTIN</span> MOWED
+          </span>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-sm font-medium text-gray-300 hover:text-white transition-colors relative group">
+            <Link key={link.name} href={link.href} className="text-sm font-medium text-gray-300 hover:text-white transition-colors relative group">
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <a href="tel:512-888-3417" className="text-sm font-medium text-gray-300 hover:text-white flex items-center gap-2">
+          <a href={`tel:${CONFIG.phone}`} className="text-sm font-medium text-gray-300 hover:text-white flex items-center gap-2">
             <Phone size={16} className="text-primary" />
-            (512) 888-3417
+            {CONFIG.phoneFormatted}
           </a>
-          <Button href="#contact" variant="primary">Get My Quote</Button>
+          <Button href="/contact" variant="primary">Get My Quote</Button>
         </div>
 
         <button className="md:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)}>
@@ -74,21 +74,21 @@ export const Navbar = () => {
           >
             <div className="px-4 pt-2 pb-6 space-y-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
               <div className="pt-4 border-t border-white/10 flex flex-col gap-4">
-                <a href="tel:512-888-3417" className="flex items-center justify-center gap-2 text-white py-2">
+                <a href={`tel:${CONFIG.phone}`} className="flex items-center justify-center gap-2 text-white py-2">
                   <Phone size={18} className="text-primary" />
-                  (512) 888-3417
+                  {CONFIG.phoneFormatted}
                 </a>
-                <Button className="w-full">Get My Quote</Button>
+                <Button href="/contact" className="w-full" onClick={() => setIsOpen(false)}>Get My Quote</Button>
               </div>
             </div>
           </motion.div>

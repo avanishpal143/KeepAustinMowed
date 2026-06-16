@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "../ui/Link"
+import { CONFIG } from "../../config"
 
 export const Footer = () => {
   return (
@@ -7,40 +9,41 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           
           <div className="col-span-1 md:col-span-1">
-            <a href="#top" className="inline-block mb-6">
-              <img 
-                src="/images/logo.avif" 
-                alt="Keep Austin Mowed" 
-                className="h-10 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-              />
-            </a>
-            <p className="mb-4">Premium lawn care services across the greater Austin area.</p>
+            <Link href="/" className="inline-block mb-6 select-none">
+              <span className="text-xl font-black tracking-tighter text-white uppercase">
+                KEEP <span className="text-primary font-black">AUSTIN</span> MOWED
+              </span>
+            </Link>
+            <p className="mb-4">Premium lawn care and detailed yard maintenance services.</p>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li><a href="tel:512-888-3417" className="hover:text-primary transition-colors">512-888-3417</a></li>
-              <li><a href="mailto:michael@kamtx.com" className="hover:text-primary transition-colors">michael@kamtx.com</a></li>
+              <li><a href={`tel:${CONFIG.phone}`} className="hover:text-primary transition-colors">{CONFIG.phoneFormatted}</a></li>
+              <li><a href={`mailto:${CONFIG.email}`} className="hover:text-primary transition-colors">{CONFIG.email}</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Service Areas</h4>
             <ul className="space-y-2">
-              <li>Leander</li>
-              <li>Cedar Park</li>
-              <li>Georgetown</li>
-              <li>Round Rock</li>
+              <li><Link href="/leander-lawn-mowing" className="hover:text-white transition-colors">Leander</Link></li>
+              <li><Link href="/cedar-park-lawn-mowing" className="hover:text-white transition-colors">Cedar Park</Link></li>
+              <li><Link href="/georgetown-lawn-mowing" className="hover:text-white transition-colors">Georgetown</Link></li>
+              <li><Link href="/round-rock-lawn-mowing" className="hover:text-white transition-colors">Round Rock</Link></li>
+              <li><Link href="/liberty-hill-lawn-mowing" className="hover:text-white transition-colors">Liberty Hill</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="#why-us" className="hover:text-white transition-colors">Why Choose Us</a></li>
-              <li><a href="#process" className="hover:text-white transition-colors">How It Works</a></li>
+              <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">My Story</Link></li>
+              <li><Link href="/locations" className="hover:text-white transition-colors">Locations</Link></li>
+              <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 

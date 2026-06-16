@@ -32,7 +32,7 @@ export const About = () => {
               />
               <div className="absolute bottom-8 left-8 z-20">
                 <div className="w-16 h-2 bg-primary mb-4 skew-x-[-20deg]"></div>
-                <h3 className="text-3xl font-black text-white mb-2 uppercase tracking-tight">Expert Team</h3>
+                <h3 className="text-3xl font-black text-white mb-2 uppercase tracking-tight">Expert Care</h3>
                 <p className="text-gray-300 font-medium">Dedicated to your property's perfection.</p>
               </div>
             </div>
@@ -48,20 +48,20 @@ export const About = () => {
             transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
             className="flex-1"
           >
-            <h2 className="inline-block px-4 py-1 mb-4 bg-white/5 border-l-4 border-primary text-sm font-black tracking-[0.2em] text-primary uppercase">Our Story</h2>
+            <h2 className="inline-block px-4 py-1 mb-4 bg-white/5 border-l-4 border-primary text-sm font-black tracking-[0.2em] text-primary uppercase">My Story</h2>
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6 leading-[1.1] uppercase tracking-tighter">
-              Your Premier Lawn Care Solution in <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Austin, TX</span>
+              Your Premium Lawn Care Partner in <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Leander & Cedar Park</span>
             </h3>
             <div className="space-y-6 text-base text-gray-400 font-light">
               <p>
-                Our expert team is committed to keeping your outdoor space lush and inviting year-round. From regular mowing to seasonal maintenance, we've got you covered.
+                I am committed to keeping your outdoor space lush, healthy, and inviting year-round. From regular mowing to custom seasonal maintenance, I've got you covered.
               </p>
               <p>
-                We know that your time is valuable. That's why we emphasize reliability, transparent communication, and exceptional results with every visit. No excuses, just a perfect lawn.
+                I know that your time is valuable. That's why I emphasize absolute reliability, clear and fast responses, consistent scheduling, and clean lawn edges with every single visit. No excuses, just a perfect cut.
               </p>
               <p className="font-bold text-white text-lg border-l-2 border-primary pl-4 uppercase tracking-wide">
-                Experience the difference with KeepAustinMowed.com — book now!
+                Experience the difference a detail-focused, local service makes — get in touch today!
               </p>
             </div>
           </motion.div>

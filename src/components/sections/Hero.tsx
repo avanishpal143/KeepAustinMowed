@@ -68,7 +68,7 @@ export const Hero = () => {
             ))}
             <br />
             <motion.span variants={itemVariants} className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500">
-              LEANDER, CEDAR PARK, <br/> ROUND ROCK & GEORGETOWN
+              LEANDER, CEDAR PARK, ROUND ROCK, <br/> GEORGETOWN & LIBERTY HILL
             </motion.span>
           </motion.h1>
 
@@ -87,7 +87,7 @@ export const Hero = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className="flex flex-col sm:flex-row gap-6 items-start sm:items-center"
           >
-            <Button href="#contact" size="lg" className="w-full sm:w-auto text-lg group shadow-[8px_8px_0px_rgba(223,0,255,0.4)] hover:shadow-[12px_12px_0px_rgba(223,0,255,0.6)]">
+            <Button href="/contact" size="lg" className="w-full sm:w-auto text-lg group shadow-[8px_8px_0px_rgba(223,0,255,0.4)] hover:shadow-[12px_12px_0px_rgba(223,0,255,0.6)]">
               Get My Quote
               <motion.span 
                 className="ml-2 inline-block"

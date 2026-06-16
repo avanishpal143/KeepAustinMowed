@@ -1,36 +1,59 @@
 import React from 'react'
 import { Navbar } from './components/layout/Navbar'
 import { Footer } from './components/layout/Footer'
-import { Hero } from './components/sections/Hero'
-import { TrustBar } from './components/sections/TrustBar'
-import { About } from './components/sections/About'
-import { Services } from './components/sections/Services'
-import { Comparison } from './components/sections/Comparison'
-import { Process } from './components/sections/Process'
-import { ServiceAreas } from './components/sections/ServiceAreas'
-import { Gallery } from './components/sections/Gallery'
-import { Testimonials } from './components/sections/Testimonials'
-import { FinalCTA } from './components/sections/FinalCTA'
-import { Contact } from './components/sections/Contact'
 import { GoToTop } from './components/ui/GoToTop'
+import { useLocation } from './lib/seo'
+
+// Pages
+import { Home } from './pages/Home'
+import { AboutPage } from './pages/AboutPage'
+import { ServicesPage } from './pages/ServicesPage'
+import { LocationsPage } from './pages/LocationsPage'
+import { GalleryPage } from './pages/GalleryPage'
+import { ContactPage } from './pages/ContactPage'
+import { CustomLandscapingPage } from './pages/CustomLandscapingPage'
+import { ServiceAreaPage } from './pages/ServiceAreaPage'
 
 function App() {
+  const currentPath = useLocation()
+
+  // Dynamic route dispatcher
+  const renderContent = () => {
+    switch (currentPath) {
+      case '/':
+        return <Home />
+      case '/about':
+      case '/my-story':
+        return <AboutPage />
+      case '/services':
+        return <ServicesPage />
+      case '/locations':
+        return <LocationsPage />
+      case '/gallery':
+        return <GalleryPage />
+      case '/contact':
+        return <ContactPage />
+      case '/custom-landscaping':
+        return <CustomLandscapingPage />
+      case '/leander-lawn-mowing':
+      case '/cedar-park-lawn-mowing':
+      case '/georgetown-lawn-mowing':
+      case '/round-rock-lawn-mowing':
+      case '/liberty-hill-lawn-mowing':
+        return <ServiceAreaPage />
+      default:
+        return <Home />
+    }
+  }
+
   return (
-    <div className="min-h-screen bg-black font-sans text-gray-100 selection:bg-primary selection:text-white overflow-x-hidden">
-      <Navbar />
-      <main>
-        <Hero />
-        <TrustBar />
-        <About />
-        <Services />
-        <Comparison />
-        <Process />
-        <Gallery />
-        <ServiceAreas />
-        <Testimonials />
-        <FinalCTA />
-        <Contact />
-      </main>
+    <div className="min-h-screen bg-black font-sans text-gray-100 selection:bg-primary selection:text-white overflow-x-hidden flex flex-col justify-between">
+      <div>
+        <Navbar />
+        <main>
+          {renderContent()}
+        </main>
+      </div>
       <Footer />
       <GoToTop />
     </div>

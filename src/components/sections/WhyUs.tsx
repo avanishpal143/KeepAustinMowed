@@ -50,11 +50,11 @@ export const WhyUs = () => {
             transition={{ duration: 0.6 }}
             className="flex-1"
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Why Austin Homeowners <br/> Choose Us
+            <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">
+              Why Local Homeowners <br/> Choose Us
             </h2>
-            <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-              We know how frustrating it is to deal with unreliable lawn care companies. That's why we've built a service focused entirely on dependability, quality, and seamless communication.
+            <p className="text-gray-400 text-lg mb-10 leading-relaxed font-medium">
+              I know how frustrating it is to deal with unreliable lawn care companies. That's why I've built a service focused entirely on consistent scheduling, clean edges, and fast responses.
             </p>
 
             <div className="space-y-6">

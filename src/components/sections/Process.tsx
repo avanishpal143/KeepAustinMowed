@@ -6,18 +6,18 @@ export const Process = () => {
   const steps = [
     {
       icon: <MessageSquareText size={40} />,
-      title: "01. Text Your Address",
-      description: "Send us your address and any photos."
+      title: "1. Send Your Address",
+      description: "Send us your address and any helpful photos."
     },
     {
       icon: <CalendarCheck size={40} />,
-      title: "02. Get Your Price",
-      description: "We'll text you a custom quote within 24 hours."
+      title: "2. We Contact You",
+      description: "We’ll reach back to set up a custom lawn evaluation."
     },
     {
       icon: <Sun size={40} />,
-      title: "03. We Schedule & Mow",
-      description: "Pick a day and we'll handle the rest."
+      title: "3. Get Scheduled",
+      description: "After the evaluation, we’ll recommend the right service plan and get your lawn on a recurring schedule."
     }
   ]
 

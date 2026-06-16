@@ -1,22 +1,23 @@
 import React from "react"
 import { motion, Variants } from "framer-motion"
-import { Scissors, Sprout, Axe } from "lucide-react"
+import { Scissors, Sprout, ShieldCheck } from "lucide-react"
+import { CONFIG } from "../../config"
 
 const services = [
   {
     icon: <Scissors size={40} />,
-    title: "Lawn Mowing",
-    description: "Regular mowing, edging, trimming, and cleanup"
+    title: CONFIG.services.mowing.title,
+    description: CONFIG.services.mowing.description
+  },
+  {
+    icon: <ShieldCheck size={40} />,
+    title: CONFIG.services.treatments.title,
+    description: CONFIG.services.treatments.description
   },
   {
     icon: <Sprout size={40} />,
-    title: "Garden Maintenance",
-    description: "Weeding, mulching, pruning, and seasonal cleanup"
-  },
-  {
-    icon: <Axe size={40} />,
-    title: "Tree & Shrub Care",
-    description: "Shaping, trimming, and health maintenance"
+    title: CONFIG.services.maintenance.title,
+    description: CONFIG.services.maintenance.description
   }
 ]
 
