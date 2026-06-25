@@ -23,7 +23,7 @@ const CITY_DATA_MAP: Record<string, CitySEOData> = {
     description: "Professional lawn mowing, trimming, and mechanical edging for yards in Leander, TX. Fast responses, detail-focused service, and consistent weekly scheduling.",
     h1: "Premium Lawn Mowing in Leander, TX",
     firstParagraph: "Keeping your lawn manicured in Leander requires regular attention, consistent mowing schedules, and precise mechanical edging. At Keep Austin Mowed, we serve Leander neighborhoods with detail-oriented lawn cutting that elevates your property's curb appeal week after week. No excuses, just a perfect cut.",
-    bgImage: "/images/hero_lawn.png",
+    bgImage: "/images/IMG_0010.jpeg",
     localWording: "Serving families across Crystal Falls, Travisso, and Leander neighborhoods with fast responses and consistent weekly scheduling."
   },
   "/cedar-park-lawn-mowing": {
@@ -32,7 +32,7 @@ const CITY_DATA_MAP: Record<string, CitySEOData> = {
     description: "Detailed local lawn care and mowing services in Cedar Park, TX. Reliable scheduling, bush trimming, and mechanical edging from a local specialist.",
     h1: "Reliable Lawn Care & Mowing in Cedar Park, TX",
     firstParagraph: "Homeowners in Cedar Park value reliable, high-quality yard maintenance that stays on a predictable schedule. We provide professional lawn cutting, sharp mechanical sidewalk edging, and thorough blow-offs that ensure your Cedar Park yard stands out. Experience the difference a detail-focused local specialist makes.",
-    bgImage: "/images/why_us_lawn.png",
+    bgImage: "/images/IMG_1260.jpeg",
     localWording: "Proudly cutting and edging yards in Bella Vista, Ranch at Brushy Creek, and throughout the Cedar Park community."
   },
   "/georgetown-lawn-mowing": {
@@ -41,7 +41,7 @@ const CITY_DATA_MAP: Record<string, CitySEOData> = {
     description: "Top-rated mowing, edging, and seasonal lawn treatments in Georgetown, TX. Weed control, fertilization, and complete lawn health maintenance.",
     h1: "Lawn Treatments & Premium Mowing in Georgetown, TX",
     firstParagraph: "A lush, green turf in Georgetown demands balanced lawn treatments, timely weed control, and precise mowing. Keep Austin Mowed offers custom seasonal fertilization alongside our premium weekly mowing services to ensure your Georgetown property stays healthy, vibrant, and weed-free year-round.",
-    bgImage: "/images/about_lawn.png",
+    bgImage: "/images/IMG_3791.jpeg",
     localWording: "Providing seasonal treatments and custom mowing solutions for homeowners in Sun City and local Georgetown communities."
   },
   "/round-rock-lawn-mowing": {
@@ -50,7 +50,7 @@ const CITY_DATA_MAP: Record<string, CitySEOData> = {
     description: "Professional lawn mowing and detailed landscape bed maintenance in Round Rock, TX. Rock and mulch installations, clean edging, and quick responses.",
     h1: "Professional Lawn Mowing in Round Rock, TX",
     firstParagraph: "From regular premium mowing and mechanical edging to mulch laying, we provide Round Rock properties with comprehensive, high-end yard care. Our team is focused on detail, consistent schedule execution, and responsive communication, making us the top choice for Round Rock homeowners.",
-    bgImage: "/images/why_us_lawn.png",
+    bgImage: "/images/IMG_1202.jpeg",
     localWording: "Delivering clean lawn borders, mulch layers, and detailed grass care for properties across Round Rock's suburban residential blocks."
   },
   "/liberty-hill-lawn-mowing": {
@@ -59,7 +59,7 @@ const CITY_DATA_MAP: Record<string, CitySEOData> = {
     description: "Detailed yard care, mowing, and garden maintenance in Liberty Hill, TX. Reliable scheduling, thick bed mulch, and mechanical edging for large lawns.",
     h1: "Premium Lawn Care & Edging in Liberty Hill, TX",
     firstParagraph: "The large, beautiful lawns of Liberty Hill deserve professional care that handles high growth periods without falloff. We specialize in consistent, detailed mowing and mechanical borders for Liberty Hill properties, keeping your grass healthy and your landscaping beds perfectly defined and manicured.",
-    bgImage: "/images/hero_lawn.png",
+    bgImage: "/images/IMG_1395.jpeg",
     localWording: "Specializing in large-acreage yard maintenance and clean border cuts for properties throughout Liberty Hill's acreage developments."
   }
 }

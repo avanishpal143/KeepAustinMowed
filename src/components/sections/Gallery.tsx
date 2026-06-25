@@ -3,12 +3,12 @@ import { motion, Variants } from "framer-motion"
 
 export const Gallery = () => {
   const images = [
-    "/images/gallery_1.png",
-    "/images/gallery_2.png",
-    "/images/gallery_3.png",
-    "/images/gallery_4.png",
-    "/images/gallery_5.png",
-    "/images/gallery_6.png"
+    "/images/IMG_1240.jpeg",
+    "/images/IMG_2515.jpeg",
+    "/images/IMG_8369.jpeg",
+    "/images/IMG_1306.jpeg",
+    "/images/IMG_8668.jpeg",
+    "/images/IMG_5293.jpeg"
   ]
 
   const containerVariants: Variants = {

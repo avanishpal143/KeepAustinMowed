@@ -26,7 +26,7 @@ export const About = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10 mix-blend-overlay"></div>
               <motion.img 
                 style={{ y: yImage, scale: 1.15 }}
-                src="/images/about_lawn.png" 
+                src="/images/IMG_1202-2.jpeg" 
                 alt="Expert Lawn Care Team" 
                 className="w-full h-full object-cover"
               />

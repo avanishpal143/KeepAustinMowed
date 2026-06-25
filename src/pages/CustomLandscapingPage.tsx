@@ -74,7 +74,7 @@ export const CustomLandscapingPage: React.FC = () => {
             <div className="relative aspect-[16/10] md:aspect-square lg:aspect-[4/3] rounded-3xl overflow-hidden border-r-[12px] border-b-[12px] border-primary" style={{ clipPath: "polygon(0 0, 92% 0, 100% 8%, 100% 100%, 8% 100%, 0 92%)" }}>
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"></div>
               <img 
-                src="/images/about_lawn.png" 
+                src="/images/IMG_1846.jpeg" 
                 alt="Custom landscaping bed and mulch installation" 
                 className="w-full h-full object-cover"
               />

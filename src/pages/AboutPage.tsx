@@ -43,7 +43,7 @@ export const AboutPage: React.FC = () => {
             <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden border-l-[12px] border-b-[12px] border-primary" style={{ clipPath: "polygon(8% 0, 100% 0, 100% 92%, 92% 100%, 0 100%, 0 8%)" }}>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent z-10" />
               <img 
-                src="/images/why_us_lawn.png" 
+                src="/images/IMG_1240.jpeg" 
                 alt="Michael Giebelhaus - Owner of Keep Austin Mowed" 
                 className="w-full h-full object-cover"
               />

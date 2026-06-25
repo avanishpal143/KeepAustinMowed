@@ -32,7 +32,7 @@ export const Hero = () => {
       <motion.div style={{ y: yBg }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black z-10" />
         <img 
-          src="/images/hero_lawn.png" 
+          src="/images/IMG_0010.jpeg" 
           alt="Premium Lawn Care" 
           className="w-full h-full object-cover object-center"
         />

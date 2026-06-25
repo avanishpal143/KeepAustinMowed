@@ -10,12 +10,18 @@ export const GalleryPage: React.FC = () => {
   )
 
   const projects = [
-    { src: "/images/gallery_1.png", alt: "Mechanical edging along concrete walkway", title: "Sharp Sidewalk Edging", city: "Cedar Park" },
-    { src: "/images/gallery_2.png", alt: "Freshly cut green lawn", title: "Premium Weekly Mowing", city: "Leander" },
-    { src: "/images/gallery_3.png", alt: "Edging along landscaping beds", title: "Clean Bed Borders", city: "Georgetown" },
-    { src: "/images/gallery_4.png", alt: "Mowing and edging backyard lawn", title: "Detail-focused Mowing", city: "Round Rock" },
-    { src: "/images/gallery_5.png", alt: "Lawn mowing along side yard walkways", title: "Clean Blow-off & Edging", city: "Leander" },
-    { src: "/images/gallery_6.png", alt: "Manicured yard landscaping cleanup", title: "Garden Bed Weeding & Cleanup", city: "Cedar Park" }
+    { src: "/images/IMG_1240.jpeg", alt: "Sharp mechanical sidewalk edging along concrete walkway", title: "Sharp Sidewalk Edging", city: "Cedar Park" },
+    { src: "/images/IMG_2515.jpeg", alt: "Freshly cut green lawn stripes with clean borders", title: "Premium Weekly Mowing", city: "Leander" },
+    { src: "/images/IMG_8369.jpeg", alt: "Trimming and edging along landscaped brick border", title: "Clean Bed Borders", city: "Georgetown" },
+    { src: "/images/IMG_1306.jpeg", alt: "Lawn mowing and edging backyard lawn", title: "Detail-focused Mowing", city: "Round Rock" },
+    { src: "/images/IMG_8668.jpeg", alt: "Fresh dark hardwood mulch installation in garden bed", title: "Premium Mulch Bed Install", city: "Leander" },
+    { src: "/images/IMG_5293.jpeg", alt: "Limestone gravel and river rock landscaping bed renovation", title: "River Rock Bed Design", city: "Cedar Park" },
+    { src: "/images/IMG_3792.jpeg", alt: "Trimming grass around residential brick house foundation", title: "Detailed Foundation Trimming", city: "Round Rock" },
+    { src: "/images/IMG_1040.jpeg", alt: "Freshly edged concrete driveway showing clean vertical cut", title: "Walkway Border Edging", city: "Georgetown" },
+    { src: "/images/IMG_3618.jpeg", alt: "Removing weeds and clean up of garden beds and native soil", title: "Garden Bed Weeding & Cleanup", city: "Liberty Hill" },
+    { src: "/images/IMG_8616.jpeg", alt: "Laying stone pathway border along landscaping layout", title: "Custom Stone Pathways", city: "Cedar Park" },
+    { src: "/images/IMG_1390.jpeg", alt: "Clearing driveways and paths with powerful leaf blower", title: "Final Blow-off & Sweep", city: "Round Rock" },
+    { src: "/images/IMG_9843.jpeg", alt: "Lawn cutting showing uniform stripes on green turf grass", title: "Lawn Stripe Definition", city: "Leander" }
   ]
 
   return (

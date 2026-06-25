@@ -26,7 +26,7 @@ export const WhyUs = () => {
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3] md:aspect-[16/10] lg:aspect-square">
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"></div>
               <img 
-                src="/images/why_us_lawn.png" 
+                src="/images/IMG_1260.jpeg" 
                 alt="Professional Lawn Mowing" 
                 className="w-full h-full object-cover"
               />
